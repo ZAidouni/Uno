@@ -1,0 +1,32 @@
+name: Run Tests
+
+on:
+  push:
+    branches:
+      - 'develop'
+      - 'main'
+      - 'staging'
+  pull_request:
+    branches:
+      - 'develop'
+      - 'main'
+      - 'staging'
+
+jobs:
+  tests:
+    runs-on: windows-latest
+    steps:
+      - name : Checkout
+        uses : actions/checkout@v2
+      - name : Setup Node
+        uses : actions/setup-node@v2
+        with : 
+          node-version: 18
+      - name : install dependecies
+        run: |
+          cd server
+          npm i
+      - name : Run Tests 
+        run : "npx jest" 
+          
+  

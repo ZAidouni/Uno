@@ -1,0 +1,48 @@
+{
+  "name": "uno",
+  "version": "1.0.0",
+  "description": "project uno",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx jest",
+    "dev": "nodemon ./bin/www"
+  },
+  "author": "Zak Aidou",
+  "license": "ISC",
+  "dependencies": {
+    "@forestadmin/agent": "^1.13.6",
+    "@forestadmin/datasource-mongoose": "^1.4.3",
+    "axios": "^1.4.0",
+    "bcrypt": "^5.1.0",
+    "bcryptjs": "^2.4.3",
+    "bson": "^5.3.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "html-to-text": "^9.0.5",
+    "http-errors": "^2.0.0",
+    "jsonwebtoken": "^9.0.1",
+    "mongodb": "^5.6.0",
+    "mongoose": "^7.3.0",
+    "morgan": "^1.10.0",
+    "node-cron": "^3.0.2",
+    "node-mocks-http": "^1.12.2",
+    "nodemailer": "^6.9.3",
+    "nodemon": "^2.0.22",
+    "pg": "^8.11.1",
+    "pg-hstore": "^2.3.4",
+    "pug": "^3.0.2",
+    "sequelize": "^6.32.1",
+    "sequelize-cli": "^6.6.1",
+    "socket.io": "^4.6.2",
+    "socket.io-adapter-mongoose": "^0.5.1",
+    "stripe": "^7.0.0",
+    "validator": "^13.9.0"
+  },
+  "devDependencies": {
+    "jest": "^29.6.1",
+    "supertest": "^6.3.3"
+  }
+}
